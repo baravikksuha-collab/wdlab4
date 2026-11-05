@@ -1,0 +1,78 @@
+/* универсальный селектор, применяется для всех элементов страницы */
+*{
+    margin: 0;
+    padding: 5;
+}*
+
+/* селектор по тегу, все элементы body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* селектор по классу */
+h1[class="main-title"] {
+    color: red;
+}
+
+.link {
+    color: green;
+}
+
+.special-link {
+    color: blue;
+}
+
+/*  */
+.nav-list li:nth-child(3) .link{
+    color: gold;
+}
+
+/* селектор по идентификатору */
+#first-post {
+    color: orange;
+}
+
+/* селектор псевдокласс */
+.post:nth-child(2) {
+    color: purple;
+}
+
+
+.widget  {
+    color: pink;
+}
+
+.color-list {
+    color: gray;
+}
+.color-list li:nth-child(2) {
+    color: rgb(99, 31, 31);
+}
+.highlighted {
+    color: black;
+}
+
+.important-widget {
+    color: rgb(123, 8, 8);
+}
+
+/*атрибутный селектор и селектор по тегу*/
+h3::before{
+    content: ";)";
+    color: rgb(182, 222, 126);
+}
+
+/*атрибутный и псевдоэлемент */
+input::placeholder {
+    color: wheat;
+} 
+
+
+.submit-btn {
+    color: black;
+    background-color: pink;
+}
+
+form:hover{
+color: blue;
+}
